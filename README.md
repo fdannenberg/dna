@@ -2,7 +2,7 @@
 
 This software supports the forthcoming publications
 
-[1] Guiding the folding pathway of DNA origami. Katherine E. Dunn*, Frits Dannenberg*, Thomas E. Ouldridge, Marta Kwiatkowska, Andrew J. Turberfield and Jonathan Bath. * equal contribution
+[1] Guiding the folding pathway of DNA origami. Katherine E. Dunn †, Frits Dannenberg †, Thomas E. Ouldridge, Marta Kwiatkowska, Andrew J. Turberfield and Jonathan Bath. † equal contribution
 
 [2] Modelling DNA Origami Self-Assembly at the Domain Level. Frits Dannenberg, Thomas E. Ouldridge, Katherine Dunn, Jonathan Bath, Marta Kwiatkowska, and Andrew J. Turberfield.
 
