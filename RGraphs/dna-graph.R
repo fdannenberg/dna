@@ -120,9 +120,6 @@ setwd(pad)
 				
 	}	
 
-			#print(data[,6])
-			#print(stapleData)
-
 	colors <- scan("colour.txt", what="");
 	timeLim <-time[seq(0*60+1,length(time),5*60)] 
 	tempLim <-temp[seq(0*60+1,length(time),5*60)]
@@ -135,18 +132,6 @@ setwd(pad)
 
 	print("timeLim is ")
 	print(timeLim)
-
-	## Write steepness of annealing curve
-	
-	#left <- which.max(stapleData>0.20)
-	#right <- which.max(stapleData>0.80)
-	#steepness <- (right - left)/60
-	#write(steepness, file=paste(pad,"/steepness.txt", sep=""))
-
-
-
-	
-
 
 
 #### FUNCTIONS
@@ -221,25 +206,17 @@ setwd(pad)
 			
 			for (i in 1:length(xSet)){
 						
-				#lines(getTime(),getData(xSet[i]-1),col=colXAnnealing, lwd=3);
 				sm <- smooth.spline(time, getData(xSet[i]+1), spar=splineFactor)
 				lines(sm$x, sm$y,col=colXAnnealing,lwd=3);
 				
-				#lines(getTime(),getData2(xSet[i]-1),col=colXMelting, lwd=3);
 				sm <- smooth.spline(time, getData2(xSet[i]+1), spar=splineFactor)
 				lines(sm$x, sm$y,col=colXMelting,lwd=3);
 				
 			}
 			
 			lines(time, input2, col=c(colMelting),lwd=3);
-			#sm <- smooth.spline(head(time,-1), diff(input2), spar=splineFactor)
-			#lines(sm$x, abs(100*sm$y),col=c(colMeltingDiff),lwd=3);
 			
 		}	
-
-		#sm <- smooth.spline(head(time,-1), diff(input), spar=splineFactor)
-		#lines(sm$x, abs(100*sm$y), col=c(colAnnealingDiff),lwd=3);
-
 
 		if(alsoMelt){
 
