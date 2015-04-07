@@ -1,0 +1,1 @@
+;stroke-width:2.96099997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" 

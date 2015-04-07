@@ -1,0 +1,2 @@
+;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:connector-curvature="0" />

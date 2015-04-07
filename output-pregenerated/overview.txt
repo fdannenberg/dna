@@ -1,0 +1,63 @@
+
+Summary of stateMap.txt files generated for the polymorphic tile design. Actual output (graphs, datafiles, heatmaps, json) ommited. 
+
+Further notation:
+
+5:0	sum of A B C D shapes (see shapes.png)
+4:1	shape E
+3:2	shape F
+MC: 	Multiple crossover, shape G
+NT: 	No type, misfold.
+
+
+
+results for RATE=0.4 C / min 
+
+FULL DESIGN
+
+0.15375	   5:0		246
+0.115	   4:1		184
+0.1775	   3:2		284
+0.04125	   MC		66
+0.5125	   N.T.		820
+
+
+
+HALF SEAM
+
+0.900625   5:0		1441
+0.0425	   4:1		68
+0.04875	   3:2		78
+6.25E-4	   MC		1
+0.0075	   N.T.		12
+
+
+
+ENLONGATE STAPLES
+
+0.203125   5:0		325
+0.06625	   4:1		106
+0.37625	   3:2		602
+0.005	   MC		8
+0.349375   N.T.		559
+
+
+
+ALTERNATIVE SEAM
+
+0.948125   3:2		1517
+0.00125	   4:1		2
+0.00875	   5:0		14
+6.25E-4	   MC		1
+0.04125	   N.T.		66
+
+
+
+LOWERRIGHT
+
+0.116875   3:2		187
+0.11875	   4:1		190
+0.22125	   5:0		354
+0.070625   MC		113
+0.4725	   N.T.		756
+

@@ -1,0 +1,23 @@
+</tspan></text>
+<flowRoot
+       xml:space="preserve"
+       id="flowRoot4856"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Bitstream Vera Sans Mono;font-style:normal;font-weight:normal;font-size:14px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Bitstream Vera Sans Mono;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion4858"><rect
+           id="rect4860"
+           width="39.85202"
+           height="23.130894"
+           x="772.23743"
+           y="513.62708" /></flowRegion><flowPara
+         id="flowPara4862"></flowPara></flowRoot><text
+       xml:space="preserve"
+       style="font-size:11.19999981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+       x="599.27264"
+       y="-163.86707"
+       id="text4864"
+       sodipodi:linespacing="125%"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4866"
+         x="599.27264"
+         y="-163.86707">

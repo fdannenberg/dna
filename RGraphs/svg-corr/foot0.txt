@@ -1,0 +1,18 @@
+<g xmlns="http://www.w3.org/2000/svg" id="g3217">
+  <g transform="matrix(6.2346436,0,0,-6.2346436,-72.127047,42.780762)" id="g276">
+    <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-curvature="0" id="path278" style="fill:none;stroke:#424244;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 0,0 C 0,1.831 1.484,3.314 3.315,3.314 5.146,3.314 6.629,1.831 6.629,0 6.629,-1.831 5.146,-3.314 3.315,-3.314 1.484,-3.314 0,-1.831 0,0 z"/>
+  </g>
+  <g transform="matrix(6.2346436,0,0,-6.2346436,-70.590186,38.31177)" id="g280">
+    <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-curvature="0" id="path282" style="fill:none;stroke:#ababa9;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="m 0,0 c 0.119,-0.162 0.196,-0.421 0.196,-0.716 0,-0.297 -0.077,-0.558 -0.194,-0.72"/>
+  </g>
+  <g transform="matrix(6.2346436,0,0,-6.2346436,-70.590186,38.31177)" id="g284">
+    <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-curvature="0" id="path286" style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="m 0,0 c 0.119,-0.162 0.196,-0.421 0.196,-0.716 0,-0.297 -0.077,-0.558 -0.194,-0.72"/>
+  </g>
+  <g transform="matrix(6.2346436,0,0,-6.2346436,-51.456646,22.116652)" id="g288">
+    <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-curvature="0" id="path290" style="fill:none;stroke:#424244;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" d="M 0,0 C 1.831,0 3.314,-1.484 3.314,-3.314 3.314,-5.146 1.831,-6.629 0,-6.629"/>
+  </g>
+</g>
+<text xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-187.27904" y="57.712368" id="text3523" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3525" x="-187.27904" y="57.712368" style="font-size:40px">S</tspan></text>
+<text xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-139.2482" y="58.225136" id="text3527" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3529" x="-139.2482" y="58.225136" style="font-size:40px">B</tspan></text>
+  </g>
+</svg>
