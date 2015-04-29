@@ -18,11 +18,8 @@ import writers.Result;
 public class Simulator implements Runnable
 {
 
-	/**
-	 * Frits Dannenberg 26/01/2012
-	 * Gillespie simulation, multithreaded
-	 */
-
+	// Gillespie simulation
+	
 	// simulation objects
 	private double time;
 	private int k, ID, steps;
@@ -46,7 +43,7 @@ public class Simulator implements Runnable
 		ID = ID2;
 		simWriter = new SimWriter(design, ID);
 
-		this.setUnbindRate(0);
+		setUnbindRate(0);
 	}
 
 	public void doSimulation()
@@ -61,7 +58,7 @@ public class Simulator implements Runnable
 			pathMetric = new PathMetrics(design);
 
 			currentState = Util.generateInitialState(design);
-			this.simPath(currentState);
+			simPath(currentState);
 			System.out.println("Thread ID " + ID + "   Steps taken = " + steps + " Paths done: " + (i + 1)); // print some info to user
 
 		}
@@ -72,39 +69,22 @@ public class Simulator implements Runnable
 	// simulates entire path.
 	private void simPath(State currentState2)
 	{
+
 		k = 0;
 		time = 0;
 		steps = 0;
 
-		boolean keepGoing = true;
-
-		while (keepGoing) {
+		while (k <= design.time.numOfSteps) {
 
 			this.moveToNextState();
 			this.writePerStepStatistic(currentState);
 
 			steps++;
 
-			// if enough reactions have been simulated, write the current state
-			// to the file. also, break the while loop.
-			while (time >= (design.time.step * (k + 1))) {
-
-				k++;
-
-				this.setUnbindRate(design.time.step * k);
-				this.writeCurrentState(k);
-				this.printInfo();
-
-				if (k > design.time.numOfSteps) {
-
-					this.writeFinalState();
-					keepGoing = false;
-
-				}
-
-			}
-
 		}
+
+		writeFinalState();
+
 	}
 
 	private void writePerStepStatistic(State currentState2)
@@ -144,14 +124,17 @@ public class Simulator implements Runnable
 		double r1 = generator.nextDouble();
 		double tau = -Math.log(r1) / a0;
 
-		// second, select the next state
-		// j becomes the index of the randomly chosen transition
+		// second, select the next state 
 		// Exception: If the predicted reaction time is too large, then do not
-		// update the current state.
-
+		// update the current state, but update rates 
 		if ((time + tau) > ((k + 1) * design.time.step)) {
 
-			time = (k + 1) * design.time.step;
+			k++;
+			time = k * design.time.step;
+
+			setUnbindRate(design.time.step * k);
+			writeCurrentState(k);
+			printInfo();
 
 		} else {
 
@@ -164,25 +147,20 @@ public class Simulator implements Runnable
 	private State selectState(double a0, ArrayList<Transition> currentStateTransition)
 	{
 		double a, r2;
-		boolean exit = false;
 		int j = 0;
 
 		j = 0;
 		r2 = generatorAccept.nextDouble();
 		a = r2 * a0;
 
-		while (exit == false) {
+		while (a >= 0) {
 
 			a = a - currentStateTransition.get(j).getRate();
+			j++;
 
-			if (a < 0) {
-				exit = true;
-			} else {
-				j++;
-			}
 		}
 
-		Transition selected = currentStateTransition.get(j);
+		Transition selected = currentStateTransition.get(j - 1);
 		result.updateTransition(selected);
 
 		return selected.update(currentState);
