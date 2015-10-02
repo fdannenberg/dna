@@ -38,27 +38,6 @@ public class RCommand
 		return command;
 	}
 
-	public static String getCreateGraphCallJon(Design design)
-	{
-		String command = "Rscript  ";
-		command = command + Util.workDirectory() + "/RGraphs/jon-graph.R";
-		command = command + " --no-restore --no-save ";
-		command = command + design.outDir + "   ";
-		command = command + design.stapleCount() + "   ";
-		command = command + design.model.getType() + "/" + design.getDesignString() + "-rate" + design.time.rate + "       ";
-		command = command + design.model.getType() + "   ";
-		if (design.isDimer()) {
-			command = command + 2 + "    ";
-		} else {
-			command = command + 1 + "    ";
-		}
-		command = command + " " + design.time.tempStart;
-		command = command + " " + design.time.tempEnd;
-		command = command + "  " + design.time.rate;
-		command = command + "  " + design.getAlsoMelt();
-
-		return command;
-	}
 
 	public static String getScatterplotCall(String outDir)
 	{
