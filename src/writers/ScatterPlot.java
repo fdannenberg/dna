@@ -41,15 +41,9 @@ public class ScatterPlot
 		this.initWriter();
 		this.generateTable(stapleProbability);
 		this.writeTable();
-		this.runR();
+		
 	}
 
-	private void runR()
-	{
-		String command = RCommand.getScatterplotCall(design.outDir);
-		writer.writeToFile(command, 2);
-		RCommand.execute(command);
-	}
 
 	private void writeTable()
 	{

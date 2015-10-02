@@ -238,7 +238,9 @@ public class Control
 		this.runEngine();
 		this.writeResults();
 		this.createGraphs();
-		this.openGraphs();
+		
+		System.out.println("Result dir: " + outDir);
+		
 	}
 
 	private void initialisePath()
@@ -306,11 +308,7 @@ public class Control
 		RCommand.execute(command);
 	}
 
-	private void openGraphs()
-	{
-		String command = "gnome-open  " + outDir + "/";
-		writers.CommandlineCaller.call(command);
-	}
+
 
 	public static void main(String[] args)
 	{
