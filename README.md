@@ -25,10 +25,10 @@
 
 This software supports the following publications
 
-- [1] Guiding the folding pathway of DNA origami. Katherine E. Dunn †, Frits Dannenberg †, Thomas E. Ouldridge, Marta Kwiatkowska, Andrew J. Turberfield and Jonathan Bath. † equal contribution. Nature, 2015.
+- [1] Guiding the folding pathway of DNA origami. Katherine E. Dunn †, **Frits Dannenberg †**, Thomas E. Ouldridge, Marta Kwiatkowska, Andrew J. Turberfield and Jonathan Bath. † equal contribution. *Nature*, 2015.
 [Link to Publisher](http://www.nature.com/nature/journal/v525/n7567/full/nature14860.html)
 
-- [2] Modelling DNA Origami Self-Assembly at the Domain Level. Frits Dannenberg, Thomas E. Ouldridge, Katherine Dunn, Jonathan Bath, Marta Kwiatkowska, and Andrew J. Turberfield. The Journal of Chemical Physics, 2015
+- [2] Modelling DNA Origami Self-Assembly at the Domain Level. **Frits Dannenberg**, Thomas E. Ouldridge, Katherine Dunn, Jonathan Bath, Marta Kwiatkowska, and Andrew J. Turberfield. *The Journal of Chemical Physics*, 2015.
 [Link to Publisher](http://scitation.aip.org/content/aip/journal/jcp/143/16/10.1063/1.4933426)
 
 and was used to generate all model results in [1,2]. A selection of results supporting [1] are included. By releasing this code, other researchers can independently verify results. The model implemented in this software is described both in [1,2].
